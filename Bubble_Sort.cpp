@@ -59,7 +59,7 @@ void bubbleSort(vector<int>& arr) {
 int main() {
 
 	int userInput;
-
+	cout << "*Bubble Sort Example*" << endl;
 	cout << "Enter the size of the random Array: "; 
 	cin >> userInput;
 

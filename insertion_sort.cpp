@@ -29,7 +29,23 @@ void printArray(const vector<int>& array) {
 }
 
 void insertionSort(vector<int>& array) {
+    
+    int size = array.size();
 
+    for( int i = 1; i < size; i++) {
+        int key = array[i];
+        int j = i - 1;
+
+        // shift larger elements to the right
+        while ( j >= 0 && array[j] > key) {
+            array[j + 1] = array[j];
+            j--;
+        }
+        array[j + 1] = key;
+
+        cout << "After pass: " << i << ": ";
+        printArray(array);
+    }
 }
 
 int main() {
