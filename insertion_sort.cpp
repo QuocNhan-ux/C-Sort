@@ -50,7 +50,12 @@ void insertionSort(vector<int>& array) {
 
 int main() {
 
-    int size = 10;
+    int userInput;
+
+    cout << "Input the size of the random array: ";
+    cin >> userInput;
+
+    int size = userInput;
 
     vector<int> array = generateRandomArray(size);
 
